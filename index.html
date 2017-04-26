@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text.css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -35,7 +35,7 @@
             <label for="mythical">Mythical creature:</label>
             <input id="mythical" class="form-control" type="text">
           </div>
-          <button type="submit" class="btn">Submit!</button>
+          <button type="submit" class="btn-primary">Submit!</button>
         </form>
       </div>
       <div id="story">
@@ -46,7 +46,23 @@
       </div>
 
       <!-- /madlib -->
+      <!-- shouting machine -->
+      <h1>Shoutout</h1>
+      <div>
+        <form id="form2">
+          <div class="form-group">
+            <label for="shout">What do you want to shout out?</label>
+            <input id="shout" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn-primary">Submit!</button>
+        </form>
+        <div id="yell">
+          <p><span class="shout"></span></p>
+        </div>
+      </div>
 
+      </div>
+      <!-- /shouting machine -->
     </div>
   </body>
 </html>

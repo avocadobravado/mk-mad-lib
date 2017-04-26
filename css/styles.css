@@ -1,3 +1,15 @@
 #story {
   display: none;
 }
+
+#yell {
+  display: none;
+}
+
+#yell {
+  font-size: 100px;
+  color: yellow;
+  background-color: red;
+  margin-top: 20px;
+  text-align: center;
+}

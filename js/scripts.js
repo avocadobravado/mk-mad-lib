@@ -17,4 +17,14 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $("#form2").submit(function(event) {
+    var shoutInput = $("input#shout").val();
+    var res = shoutInput.toUpperCase();
+    $(".shout").text(res);
+
+    $("#yell").show();
+
+    event.preventDefault();
+  });
 });
