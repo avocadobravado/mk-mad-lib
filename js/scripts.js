@@ -1,17 +1,24 @@
 $(document).ready(function() {
   $("#form1").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var person2Input = $("input#person2").val();
-    var travelInput = $("input#travel").val();
-    var animalInput = $("input#animal").val();
-    var mythicalInput = $("input#mythical").val();
+    var blanks = ["person1", "person2", "travel", "animal", "mythical"];
 
-
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".travel").text(travelInput);
-    $(".animal").text(animalInput);
-    $(".mythical").text(mythicalInput);
+    blanks.forEach(function(blank) {
+      var userInput = $("input#" + blank).val();
+      $("." + blank).text(userInput);
+    });
+    //
+    // var person1Input = $("input#person1").val();
+    // var person2Input = $("input#person2").val();
+    // var travelInput = $("input#travel").val();
+    // var animalInput = $("input#animal").val();
+    // var mythicalInput = $("input#mythical").val();
+    //
+    //
+    // $(".person1").text(person1Input);
+    // $(".person2").text(person2Input);
+    // $(".travel").text(travelInput);
+    // $(".animal").text(animalInput);
+    // $(".mythical").text(mythicalInput);
 
     $("#story").show();
 
